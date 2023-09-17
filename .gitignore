@@ -1,0 +1,15 @@
+.vs
+Assets/Materials
+Assets/Scenes
+Assets/*.meta
+
+Library
+Logs
+obj
+Packages
+ProjectSettings
+Temp
+UserSettings
+.vsconfig
+*.csproj
+starPlanet.sln
