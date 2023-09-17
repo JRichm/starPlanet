@@ -12,4 +12,5 @@ Temp
 UserSettings
 .vsconfig
 *.csproj
+*.asset
 starPlanet.sln
