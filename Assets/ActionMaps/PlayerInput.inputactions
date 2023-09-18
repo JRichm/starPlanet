@@ -49,6 +49,24 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "boostAction",
+                    "type": "Button",
+                    "id": "59f493b5-ab95-45ab-b4fa-b3296e75fc11",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "upAction",
+                    "type": "Button",
+                    "id": "84e9bdaf-6c92-4170-a253-513ab6ee0763",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -219,7 +237,7 @@
                 },
                 {
                     "name": "",
-                    "id": "fd994ab7-ff89-4265-b7f7-cc6c244c7014",
+                    "id": "bb67d338-eee0-43ac-a0f0-860fe20b4b25",
                     "path": "<Mouse>/leftButton",
                     "interactions": "",
                     "processors": "",
@@ -227,6 +245,72 @@
                     "action": "fireAction",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "boostKB",
+                    "id": "b38ef602-bcbb-4102-9775-4e48f861ec1b",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "boostAction",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "520a9c23-a4c0-4d21-903c-3ea44285548a",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "boostAction",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "09cf3e05-bde5-4c45-b0e0-62666f4f60ee",
+                    "path": "<Keyboard>/shift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "boostAction",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "upKB",
+                    "id": "623ec524-4625-4724-acaf-a90656850b6a",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "upAction",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "19ad171e-191c-4697-a997-9f9513bb2a60",
+                    "path": "<Keyboard>/ctrl",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "upAction",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "b51f1072-13dc-4598-9095-460a29d36780",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "upAction",
+                    "isComposite": false,
+                    "isPartOfComposite": true
                 }
             ]
         }

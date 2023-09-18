@@ -2,6 +2,8 @@
 Assets/Materials
 Assets/Scenes
 Assets/*.meta
+Assets/images
+Assets/TextMesh Pro
 
 Library
 Logs
