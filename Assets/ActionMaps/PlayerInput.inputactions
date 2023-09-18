@@ -95,39 +95,6 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "ThrustController",
-                    "id": "68479276-5d4a-41b5-831d-a67eed92fe8a",
-                    "path": "1DAxis",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Thrust",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "negative",
-                    "id": "e1fc967d-b24b-4a25-98dc-91c61f0c2358",
-                    "path": "<Gamepad>/leftStick/down",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Thrust",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "positive",
-                    "id": "ef78139c-1906-4c7b-a9cf-bb492abdee3e",
-                    "path": "<Gamepad>/leftStick/up",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Thrust",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
                     "name": "StrafeKB",
                     "id": "227bdf65-394b-4453-9961-b61d1f2c683b",
                     "path": "1DAxis",
@@ -174,7 +141,7 @@
                 {
                     "name": "negative",
                     "id": "4133ac81-0544-46d5-8613-50f3c804b4b5",
-                    "path": "<Keyboard>/leftCtrl",
+                    "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -185,7 +152,7 @@
                 {
                     "name": "positive",
                     "id": "c276fd2a-d19b-4a22-a685-534d85c9f1bd",
-                    "path": "<Keyboard>/space",
+                    "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
