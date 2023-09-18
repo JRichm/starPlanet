@@ -86,6 +86,7 @@ public class ShipClass : MonoBehaviour {
             horizontalGlide *= leftRightGlideReduction;
         }
 
+        Debug.Log("\nglide:\t\t" + glide + "\nverticalGlide:\t" + verticalGlide + "\nhorizontalGlide:\t" + horizontalGlide);
     }
 
     public void OnThrust(InputAction.CallbackContext context) {

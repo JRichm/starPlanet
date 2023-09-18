@@ -141,7 +141,7 @@
                 {
                     "name": "negative",
                     "id": "4133ac81-0544-46d5-8613-50f3c804b4b5",
-                    "path": "<Keyboard>/s",
+                    "path": "<Keyboard>/ctrl",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -152,7 +152,7 @@
                 {
                     "name": "positive",
                     "id": "c276fd2a-d19b-4a22-a685-534d85c9f1bd",
-                    "path": "<Keyboard>/w",
+                    "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
