@@ -40,6 +40,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "fireAction",
+                    "type": "Button",
+                    "id": "8052c4d7-ddcf-40e8-b39c-673b7aba275e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -178,7 +187,7 @@
                 {
                     "name": "rollKB@",
                     "id": "2ce1e50d-aac6-4548-83b4-a76e4d36f1d7",
-                    "path": "1DAxis",
+                    "path": "1DAxis(minValue=-10,maxValue=10)",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -207,6 +216,17 @@
                     "action": "rollAction",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "fd994ab7-ff89-4265-b7f7-cc6c244c7014",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "fireAction",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
