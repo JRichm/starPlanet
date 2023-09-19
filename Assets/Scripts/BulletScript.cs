@@ -14,8 +14,16 @@ public class BulletScript : MonoBehaviour
         rb.velocity = transform.forward * bulletSpeed;
     }
 
-    private void OnTriggerEnter(Collider other) {
-        Instantiate(explosionEffect, transform.position, transform.rotation);
+    private void OnCollisionEnter(Collision collision) {
+        ContactPoint contact = collision.contacts[0]; // Get the first contact point.
+
+        // Calculate a position slightly above the collision point.
+        Vector3 explosionPosition = contact.point + contact.normal * 0.1f; // You can adjust the offset as needed.
+
+        // Instantiate the explosion effect at the calculated position.
+        Instantiate(explosionEffect, explosionPosition, Quaternion.identity);
+
+        // Destroy the bullet.
         Destroy(gameObject);
     }
 }
