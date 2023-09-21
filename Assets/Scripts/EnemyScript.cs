@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class EnemyScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    private Rigidbody rb;
+    private BoxCollider enemyCollider;
+
+    private void Start() {
+        rb = GetComponent<Rigidbody>();
+        enemyCollider = GetComponent<BoxCollider>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    private void OnColliderEnter(Collider other) {
+        if (other != null) {
+            Debug.Log("on collider enter");
+            Debug.Log(other);
+        }
     }
 }

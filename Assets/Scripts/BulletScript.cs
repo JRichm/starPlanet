@@ -6,6 +6,7 @@ public class BulletScript : MonoBehaviour
 {
     [SerializeField] float bulletSpeed = 100f;
     [SerializeField] ParticleSystem explosionEffect;
+    [SerializeField] int bulletDamage = 10;
 
     private Rigidbody rb;
 
@@ -16,6 +17,10 @@ public class BulletScript : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision) {
         ContactPoint contact = collision.contacts[0]; // Get the first contact point.
+        HealthScript otherHealthScript = collision.gameObject.GetComponent<HealthScript>();
+        if (otherHealthScript != null) {
+            otherHealthScript.takeDamage((float)bulletDamage);
+        }
 
         // Calculate a position slightly above the collision point.
         Vector3 explosionPosition = contact.point + contact.normal * 0.1f; // You can adjust the offset as needed.

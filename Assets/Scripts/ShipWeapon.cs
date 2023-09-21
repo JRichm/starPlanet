@@ -21,7 +21,6 @@ public class ShipWeapon : MonoBehaviour
 
     public void Shoot() {
 
-        Debug.Log(Time.time + " " + Time.deltaTime);
         if (currentAmmo > 0 && Time.time > nextFireTime) {
             // instantiate and shoot a bullet
             Instantiate(bulletPrefab, shootPoint.position, shootPoint.rotation);
