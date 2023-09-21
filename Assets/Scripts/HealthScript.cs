@@ -15,7 +15,7 @@ public class HealthScript : MonoBehaviour
         currentHealth -= damage;
         Debug.Log(gameObject.name + " took " + damage + " damage");
         if (currentHealth < 0) {
-            // implement death
+            Destroy(gameObject);
         }
     }
 
