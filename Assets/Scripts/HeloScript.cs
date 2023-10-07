@@ -3,11 +3,11 @@ using UnityEngine.InputSystem;
 
 public class HeloScript : MonoBehaviour {
 
-    public float throttleSpeed = 10f;
-    public float pitchSpeed = 10f;
-    public float rollSpeed = 10f;
-    public float yawSpeed = 10f;
-    public float damping = 20f;
+    public float throttleSpeed = 15f;
+    public float pitchSpeed = 15f;
+    public float rollSpeed = 15f;
+    public float yawSpeed = 15f;
+    public float damping = 30f;
 
     public Transform shipFirePosition;
 

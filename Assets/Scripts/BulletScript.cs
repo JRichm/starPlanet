@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 
 public class BulletScript : MonoBehaviour
@@ -8,11 +9,23 @@ public class BulletScript : MonoBehaviour
     [SerializeField] ParticleSystem explosionEffect;
     [SerializeField] int bulletDamage = 10;
 
+    private float timer;
     private Rigidbody rb;
+    private CapsuleCollider bulletCol;
 
     private void Start() {
         rb = GetComponent<Rigidbody>();
+        bulletCol = GetComponent<CapsuleCollider>();
+        bulletCol.enabled = false;
         rb.velocity = transform.forward * bulletSpeed;
+    }
+
+    private void Update() {
+        timer += Time.deltaTime;
+        if (timer > .025f && !bulletCol.enabled) {
+            bulletCol.enabled = true;
+            Debug.Log("col enabled " + timer);
+        }
     }
 
     private void OnCollisionEnter(Collision collision) {

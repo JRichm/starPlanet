@@ -6,6 +6,7 @@ using TMPro;
 public class ShipWeapon : MonoBehaviour
 {
     [SerializeField] float fireRate = 0.002f;
+    [SerializeField] float spreadAmount = 0.025f;
     [SerializeField] int maxAmmo = 30;
     [SerializeField] int currentAmmo;
     [SerializeField] Transform shootPoint;
@@ -22,8 +23,17 @@ public class ShipWeapon : MonoBehaviour
     public void Shoot() {
 
         if (currentAmmo > 0 && Time.time > nextFireTime) {
+
+            Quaternion randomRotation = Quaternion.Euler(
+                Random.Range(-spreadAmount, spreadAmount),
+                Random.Range(-spreadAmount, spreadAmount),
+                0f
+            );
+
+            Quaternion finalRotation = shootPoint.rotation * randomRotation;
+
             // instantiate and shoot a bullet
-            Instantiate(bulletPrefab, shootPoint.position, shootPoint.rotation);
+            Instantiate(bulletPrefab, shootPoint.position, finalRotation);
 
             // update the next fire time based on the fire rate
             nextFireTime = Time.time + fireRate;
